@@ -7,11 +7,11 @@
 一个用于对接 [Shizuku API](https://github.com/RikkaApps/Shizuku-API) 的 Flutter 插件，让你的应用可以以系统权限或
 `ADB` 权限执行 `shell` 命令。
 
-[![Pub Version](https://img.shields.io/pub/v/shizuku-api-flutter-plugin.svg)](https://pub.dev/packages/shizuku-api-flutter-plugin)
+[![Pub Version](https://img.shields.io/pub/v/shizuku-api-plugin.svg)][pub]
 [![API Reference](https://img.shields.io/badge/API-Reference-0175C2.svg)](https://pub.dev/documentation/shizuku-api-plugin/latest/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/runoob-coder/shizuku-api-flutter-plugin)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)](https://github.com/runoob-coder/shizuku-api-flutter-plugin)
+[![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)][GitHub]
 
 [English](README.md) | 简体中文
 
@@ -152,11 +152,15 @@ Future<void> main() async {
 
 如果 `shizuku_api_plugin` 帮助了你，请考虑支持它，只需几秒即可帮助更多 Flutter 开发者发现此库。
 
-- ⭐ [GitHub 上点星](https://github.com/runoob-coder/shizuku-api-flutter-plugin)
-- 👍 [pub.dev 上点赞](https://pub.dev/packages/shizuku_api_plugin)
+- ⭐ [GitHub 上点星][GitHub]
+- 👍 [pub.dev 上点赞][pub]
 
 ## ☕️ 请我喝咖啡
 
 <a href="https://ko-fi.com/noob_coder" target="_blank">
   <img src="https://storage.ko-fi.com/cdn/kofi6.png" alt="Buy Me a Coffee at ko-fi.com" />
 </a>
+
+[pub]: https://pub.dev/packages/shizuku_api_plugin
+[API Reference]: https://pub.dev/documentation/shizuku_api_plugin/latest/
+[GitHub]: https://github.com/runoob-coder/shizuku-api-flutter-plugin

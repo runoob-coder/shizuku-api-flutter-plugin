@@ -8,11 +8,11 @@ A Flutter plugin to interact with the [Shizuku API](https://github.com/RikkaApps
 allowing your
 application to execute `shell` commands with system or `ADB` privileges.
 
-[![Pub Version](https://img.shields.io/pub/v/shizuku-api-flutter-plugin.svg)](https://pub.dev/packages/shizuku-api-flutter-plugin)
+[![Pub Version](https://img.shields.io/pub/v/shizuku-api-plugin.svg)][pub]
 [![API Reference](https://img.shields.io/badge/API-Reference-0175C2.svg)](https://pub.dev/documentation/shizuku-api-plugin/latest/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/runoob-coder/shizuku-api-flutter-plugin)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)](https://github.com/runoob-coder/shizuku-api-flutter-plugin)
+[![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)][GitHub]
 
 English | [中文](https://github.com/runoob-coder/shizuku-api-flutter-plugin/blob/master/README_CN.md)
 
@@ -160,11 +160,15 @@ For more questions, refer to the
 If `shizuku_api_plugin` helps you build better UIs, please consider supporting it.  
 It only takes a few seconds and helps other Flutter developers discover the library.
 
-- ⭐ [Star on GitHub](https://github.com/runoob-coder/shizuku-api-flutter-plugin)
-- 👍 [Like on pub.dev](https://pub.dev/packages/shizuku_api_plugin)
+- ⭐ [Star on GitHub][GitHub]
+- 👍 [Like on pub.dev][pub]
 
 ## ☕️ Buy Me a Coffee
 
 <a href="https://ko-fi.com/noob_coder" target="_blank">
   <img src="https://storage.ko-fi.com/cdn/kofi6.png" alt="Buy Me a Coffee at ko-fi.com" />
 </a>
+
+[pub]: https://pub.dev/packages/shizuku_api_plugin
+[API Reference]: https://pub.dev/documentation/shizuku_api_plugin/latest/
+[GitHub]: https://github.com/runoob-coder/shizuku-api-flutter-plugin

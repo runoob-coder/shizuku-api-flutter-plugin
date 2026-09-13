@@ -1,3 +1,7 @@
+## 1.0.1
+
+- 📝 **Docs**: improved documentation links.
+
 ## 1.0.0
 
 * `ShizukuApi` with four methods:
