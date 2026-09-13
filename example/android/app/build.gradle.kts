@@ -27,6 +27,12 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        // flutter 3.44起，打包需要传递 -Pdisable-abi-filtering=true 参数
+        // flutter build apk -Pdisable-abi-filtering=true
+        ndk {
+            abiFilters += listOf("arm64-v8a")
+        }
     }
 
     buildTypes {
@@ -34,6 +40,12 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
+
+            // 代码缩减是始终在 release 构建中启用的
+            // Enables code-related app optimization.
+            isMinifyEnabled = true
+            // Enables resource shrinking.
+            isShrinkResources = true
         }
     }
 }
