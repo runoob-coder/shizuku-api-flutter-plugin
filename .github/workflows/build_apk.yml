@@ -1,0 +1,140 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  release:
+    types: [ published ]
+  workflow_dispatch:
+
+concurrency:
+  group: build-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: '3.47.1'
+  JAVA_VERSION: '17'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build-apk:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: example
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      - name: Print versions
+        run: |
+          flutter --version
+          java -version
+
+      - name: Get plugin dependencies
+        working-directory: ${{ github.workspace }}
+        run: flutter pub get
+
+      - name: Flutter analyze (plugin lib)
+        working-directory: ${{ github.workspace }}
+        run: flutter analyze lib
+
+      - name: Get example dependencies
+        run: flutter pub get
+
+      - name: Flutter analyze (example lib)
+        run: flutter analyze lib
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Upload APK
+        id: upload-apk
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: example/build/app/outputs/flutter-apk/*.apk
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Comment APK download link on PR
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const marker = '<!-- apk-artifact-download -->';
+            const artifactUrl = '${{ steps.upload-apk.outputs.artifact-url }}';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = [
+              marker,
+              '## 📦 APK 构建完成',
+              '',
+              `- 提交：\`${context.sha.slice(0, 7)}\``,
+              `- 下载：**${artifactUrl}**`,
+              `- 构建日志：${runUrl}`,
+              '',
+              '> 下载链接需要登录 GitHub 后访问；artifact 保留 14 天。'
+            ].join('\n');
+
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number });
+            const existing = comments.find((comment) => comment.body.includes(marker));
+
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
+
+  attach-apk-to-release:
+    name: Attach APK to release
+    needs: build-apk
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download APK artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: app-release-apk
+          path: dist
+
+      - name: Upload APK to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          apk="$(find dist -type f -name '*.apk' | head -n 1)"
+          if [ -z "$apk" ]; then
+            echo "No APK found in artifact" >&2
+            exit 1
+          fi
+          asset="shizuku_api_example-${TAG}.apk"
+          cp "$apk" "$asset"
+          gh release upload "$TAG" "$asset" --clobber
+          echo "Attached $asset to release $TAG"
