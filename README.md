@@ -8,7 +8,7 @@ A Flutter plugin to interact with the [Shizuku API](https://github.com/RikkaApps
 allowing your
 application to execute `shell` commands with system or `ADB` privileges.
 
-[![Pub Version](https://img.shields.io/pub/v/shizuku-api-plugin.svg)][pub]
+[![Pub Version](https://img.shields.io/pub/v/shizuku_api_plugin.svg)][pub]
 [![API Reference](https://img.shields.io/badge/API-Reference-0175C2.svg)](https://pub.dev/documentation/shizuku-api-plugin/latest/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/runoob-coder/shizuku-api-flutter-plugin)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
