@@ -1,7 +1,7 @@
 # Shizuku API Flutter 插件
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/runoob-coder/shizuku-api-flutter-plugin/master/logo.png" width="100" style="width: 100px;" alt="Shizuku API Flutter Plugin">
+   <img src="https://raw.githubusercontent.com/runoob-coder/shizuku-api-flutter-plugin/main/logo.png" width="100" style="width: 100px;" alt="Shizuku API Flutter Plugin">
 </div>
 
 一个用于对接 [Shizuku API](https://github.com/RikkaApps/Shizuku-API) 的 Flutter 插件，让你的应用可以以系统权限或

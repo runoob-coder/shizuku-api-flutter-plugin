@@ -1,7 +1,7 @@
 # Shizuku API Flutter Plugin
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/runoob-coder/shizuku-api-flutter-plugin/master/logo.png" width="100" style="width: 100px;" alt="Shizuku API Flutter Plugin">
+   <img src="https://raw.githubusercontent.com/runoob-coder/shizuku-api-flutter-plugin/main/logo.png" width="100" style="width: 100px;" alt="Shizuku API Flutter Plugin">
 </div>
 
 A Flutter plugin to interact with the [Shizuku API](https://github.com/RikkaApps/Shizuku-API),
@@ -15,7 +15,7 @@ application to execute `shell` commands with system or `ADB` privileges.
 [![CI](https://img.shields.io/github/actions/workflow/status/runoob-coder/shizuku-api-flutter-plugin/build_apk.yml?label=CI)](https://github.com/runoob-coder/shizuku-api-flutter-plugin/actions/workflows/build_apk.yml)
 [![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)][GitHub]
 
-English | [中文](https://github.com/runoob-coder/shizuku-api-flutter-plugin/blob/master/README_CN.md)
+English | [中文](https://github.com/runoob-coder/shizuku-api-flutter-plugin/blob/main/README_CN.md)
 
 ## 📦 Installation
 
