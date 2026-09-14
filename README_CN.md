@@ -8,7 +8,7 @@
 `ADB` 权限执行 `shell` 命令。
 
 [![Pub Version](https://img.shields.io/pub/v/shizuku_api_plugin.svg)][pub]
-[![API Reference](https://img.shields.io/badge/API-Reference-0175C2.svg)](https://pub.dev/documentation/shizuku-api-plugin/latest/)
+[![API Reference](https://img.shields.io/badge/API-Reference-0175C2.svg)](https://pub.dev/documentation/shizuku_api_plugin/latest/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/runoob-coder/shizuku-api-flutter-plugin)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)][GitHub]
