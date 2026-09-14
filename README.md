@@ -17,6 +17,12 @@ application to execute `shell` commands with system or `ADB` privileges.
 
 English | [中文](https://github.com/runoob-coder/shizuku-api-flutter-plugin/blob/main/README_CN.md)
 
+## 🔗 Related Projects
+
+* [priv_kit](https://pub.dev/packages/priv_kit) — An app-owned privileged Android runtime.
+
+Priv Kit supports startup through Root, ADB, Manual, and external authorization bridges.
+
 ## 📦 Installation
 
 Add the dependency to your project:

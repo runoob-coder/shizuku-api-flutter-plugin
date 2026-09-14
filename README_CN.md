@@ -16,6 +16,11 @@
 
 [English](README.md) | 简体中文
 
+## 🔗 相关项目
+
+* [priv_kit](https://pub.dev/packages/priv_kit) —— Android 应用自有特权运行时，
+支持通过 Root、ADB、手动命令和外部授权器启动。
+
 ## 📦 安装
 
 在你的项目中添加依赖：
