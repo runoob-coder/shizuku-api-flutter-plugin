@@ -11,6 +11,7 @@
 [![API Reference](https://img.shields.io/badge/API-Reference-0175C2.svg)](https://pub.dev/documentation/shizuku_api_plugin/latest/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/runoob-coder/shizuku-api-flutter-plugin)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![CI](https://img.shields.io/github/actions/workflow/status/runoob-coder/shizuku-api-flutter-plugin/deploy_apk.yml?label=CI)](https://github.com/runoob-coder/shizuku-api-flutter-plugin/actions/workflows/build_apk.yml)
 [![GitHub stars](https://img.shields.io/github/stars/runoob-coder/shizuku-api-flutter-plugin.svg?style=social)][GitHub]
 
 [English](README.md) | 简体中文
