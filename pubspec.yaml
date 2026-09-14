@@ -1,6 +1,6 @@
 name: shizuku_api_plugin
 description: "Shizuku API is the API provided by Shizuku and Sui. With Shizuku API, you can call your Java/JNI code with root/shell (ADB) identity."
-version: 1.0.2
+version: 1.0.3
 homepage:
 repository: https://github.com/runoob-coder/shizuku-api-flutter-plugin
 issue_tracker: https://github.com/runoob-coder/shizuku-api-flutter-plugin/issues
