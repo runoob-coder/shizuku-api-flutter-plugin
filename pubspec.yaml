@@ -16,16 +16,6 @@ screenshots:
   - description: "Shizuku API"
     path: logo.png
 
-include:
-  - pubspec.yaml
-  - CHANGELOG.md
-  - LICENSE
-  - README.md
-  - README_CN.md
-  - analysis_options.yaml
-  - android/
-  - lib/
-
 platforms:
   android:
 
