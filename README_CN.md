@@ -163,9 +163,20 @@ Future<void> main() async {
 
 ## [☕️ 请我喝奶茶](https://www.noob-coder.com/buy-me-a-coffee)
 
-|                                            赞赏码     WeChat                                             |                                          支付宝     Alipay                                           |
-|:-----------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|
-| ![赞赏码WeChat](https://raw.githubusercontent.com/runoob-coder/runoob-coder/main/public/appreciate.avif) | ![支付宝Alipay](https://raw.githubusercontent.com/runoob-coder/runoob-coder/main/public/alipay.avif) |
+<table>
+<thead>
+<tr>
+    <th style="text-align:center;">赞赏码 WeChat</th>
+    <th style="text-align:center;">支付宝 Alipay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/runoob-coder/runoob-coder/main/public/appreciate.avif" alt="赞赏码WeChat" /></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/runoob-coder/runoob-coder/main/public/alipay.avif" alt="支付宝Alipay" /></td>
+  </tr>
+</tbody>
+</table>
 
 [pub]: https://pub.dev/packages/shizuku_api_plugin
 
