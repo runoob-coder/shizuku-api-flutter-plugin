@@ -19,7 +19,7 @@
 ## 🔗 相关项目
 
 * [priv_kit](https://pub.dev/packages/priv_kit) —— Android 应用自有特权运行时，
-支持通过 Root、ADB、手动命令和外部授权器启动。
+  支持通过 Root、ADB、手动命令和外部授权器启动。
 
 ## 📦 安装
 
@@ -161,12 +161,14 @@ Future<void> main() async {
 - ⭐ [GitHub 上点星][GitHub]
 - 👍 [pub.dev 上点赞][pub]
 
-## ☕️ 请我喝咖啡
+## [☕️ 请我喝奶茶](https://www.noob-coder.com/buy-me-a-coffee)
 
-<a href="https://ko-fi.com/noob_coder" target="_blank">
-  <img src="https://storage.ko-fi.com/cdn/kofi6.png" alt="Buy Me a Coffee at ko-fi.com" />
-</a>
+|                                            赞赏码     WeChat                                             |                                          支付宝     Alipay                                           |
+|:-----------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|
+| ![赞赏码WeChat](https://raw.githubusercontent.com/runoob-coder/runoob-coder/main/public/appreciate.avif) | ![支付宝Alipay](https://raw.githubusercontent.com/runoob-coder/runoob-coder/main/public/alipay.avif) |
 
 [pub]: https://pub.dev/packages/shizuku_api_plugin
+
 [API Reference]: https://pub.dev/documentation/shizuku_api_plugin/latest/
+
 [GitHub]: https://github.com/runoob-coder/shizuku-api-flutter-plugin

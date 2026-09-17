@@ -170,11 +170,12 @@ It only takes a few seconds and helps other Flutter developers discover the libr
 - ⭐ [Star on GitHub][GitHub]
 - 👍 [Like on pub.dev][pub]
 
-## ☕️ Buy Me a Coffee
+## [☕️ Buy Me a Coffee](https://www.noob-coder.com/buy-me-a-coffee)
 
-<a href="https://ko-fi.com/noob_coder" target="_blank">
-  <img src="https://storage.ko-fi.com/cdn/kofi6.png" alt="Buy Me a Coffee at ko-fi.com" />
-</a>
+|                                                                                   Buy Me a Coffee                                                                                   |                                                                                    Donate with PayPal                                                                                     |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <a href="https://ko-fi.com/noob_coder" target="_blank"><img src="https://github.com/runoob-coder/runoob-coder/raw/main/public/kofi6.webp" alt="Buy Me a Coffee at ko-fi.com" /></a> | <a href="https://paypal.me/runoobcoder" target="_blank"><img src="https://github.com/runoob-coder/runoob-coder/raw/main/public/paypal-donate-button.avif" alt="Donate with PayPal" /></a> |
+
 
 [pub]: https://pub.dev/packages/shizuku_api_plugin
 [API Reference]: https://pub.dev/documentation/shizuku_api_plugin/latest/
