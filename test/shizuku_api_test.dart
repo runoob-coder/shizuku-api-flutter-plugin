@@ -1,40 +1,58 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'package:shizuku_api_plugin/shizuku_api.dart';
 import 'package:shizuku_api_plugin/shizuku_api_method_channel.dart';
 import 'package:shizuku_api_plugin/shizuku_api_platform_interface.dart';
 
-class MockShizukuApiPlatform
-    with MockPlatformInterfaceMixin
-    implements ShizukuApiPlatform {
+class MockShizukuApiPlatform extends ShizukuApiPlatform {
   @override
-  Future<bool?> checkPermission() {
-    // TODO: implement checkPermission
-    throw UnimplementedError();
-  }
+  Future<bool?> requestPermission() async => true;
 
   @override
-  Future<bool?> pingBinder() {
-    // TODO: implement pingBinder
-    throw UnimplementedError();
-  }
+  Future<bool?> pingBinder() async => true;
 
   @override
-  Future<bool?> requestPermission() {
-    // TODO: implement requestPermission
-    throw UnimplementedError();
-  }
+  Future<bool?> checkPermission() async => true;
 
   @override
-  Future<String?> runCommand(String command) {
-    // TODO: implement runCommand
-    throw UnimplementedError();
-  }
+  Future<String?> runCommand(String command) async => 'output: $command';
 }
 
 void main() {
-  final ShizukuApiPlatform initialPlatform = ShizukuApiPlatform.instance;
-
   test('$MethodChannelShizukuApi is the default instance', () {
-    expect(initialPlatform, isInstanceOf<MethodChannelShizukuApi>());
+    expect(
+      ShizukuApiPlatform.instance,
+      isInstanceOf<MethodChannelShizukuApi>(),
+    );
+  });
+
+  group('ShizukuApi', () {
+    late ShizukuApi api;
+    late MockShizukuApiPlatform mockPlatform;
+
+    setUp(() {
+      mockPlatform = MockShizukuApiPlatform();
+      ShizukuApiPlatform.instance = mockPlatform;
+      api = ShizukuApi();
+    });
+
+    tearDown(() {
+      ShizukuApiPlatform.instance = MethodChannelShizukuApi();
+    });
+
+    test('requestPermission delegates to the platform', () async {
+      expect(await api.requestPermission(), isTrue);
+    });
+
+    test('pingBinder delegates to the platform', () async {
+      expect(await api.pingBinder(), isTrue);
+    });
+
+    test('checkPermission delegates to the platform', () async {
+      expect(await api.checkPermission(), isTrue);
+    });
+
+    test('runCommand delegates to the platform', () async {
+      expect(await api.runCommand('id'), 'output: id');
+    });
   });
 }

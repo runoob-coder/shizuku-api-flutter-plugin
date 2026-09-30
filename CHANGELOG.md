@@ -1,3 +1,14 @@
+## 1.0.4
+
+### 🐛 Bug Fixes & Reliability
+
+- **Android — executor lifecycle**: `mExecutor` is now lazy-initialized in `onAttachedToEngine` and
+  shut down in `onDetachedFromEngine`, avoiding use-after-shutdown crashes on engine reattach.
+- **Android — `requestPermission()`**: returns `false` immediately when Shizuku's binder is not
+  running, and is guarded by a 60s timeout (`PERMISSION_REQUEST_TIMEOUT_MILLIS`) so a never-shown
+  dialog can't hang the Dart `Future`. The result settles exactly once and the listener is always
+  removed.
+
 ## 1.0.3
 
 - 📝 **Docs**: improved documentation links.

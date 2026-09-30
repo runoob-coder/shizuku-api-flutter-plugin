@@ -24,7 +24,7 @@ abstract class ShizukuApiPlatform extends PlatformInterface {
   }
 
   Future<bool?> requestPermission() {
-    throw UnimplementedError('checkPermission() has not been implemented.');
+    throw UnimplementedError('requestPermission() has not been implemented.');
   }
 
   Future<bool?> pingBinder() {
@@ -32,7 +32,7 @@ abstract class ShizukuApiPlatform extends PlatformInterface {
   }
 
   Future<bool?> checkPermission() {
-    throw UnimplementedError('permissionBool() has not been implemented.');
+    throw UnimplementedError('checkPermission() has not been implemented.');
   }
 
   Future<String?> runCommand(String command) {
