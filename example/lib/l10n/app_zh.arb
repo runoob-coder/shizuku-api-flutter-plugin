@@ -1,0 +1,36 @@
+{
+  "@@locale": "zh",
+
+  "appTitle": "Shizuku API 演示",
+  "language": "语言",
+  "followSystem": "跟随系统",
+
+  "status": "状态",
+  "checkStatus": "检查状态",
+  "shizukuService": "Shizuku 服务",
+  "permission": "权限",
+  "serviceRunning": "运行中",
+  "serviceNotRunning": "未运行",
+  "permissionGranted": "已授权",
+  "permissionDenied": "未授权",
+  "unknown": "未知",
+
+  "startShizukuFirst": "请先启动 Shizuku，然后再申请权限。",
+  "canRunCommandsNow": "已获得权限，现在可以执行命令了。",
+  "permissionNotGrantedYet": "尚未获得权限。",
+  "requestPermission": "申请权限",
+  "snackPermissionGranted": "权限已授予。",
+  "snackPermissionDenied": "权限被拒绝。",
+  "checkStatusFailed": "检查状态失败：{error}",
+  "requestPermissionFailed": "申请权限失败：{error}",
+
+  "runCommand": "执行命令",
+  "commandLabel": "命令",
+  "commandHint": "例如 wm size、pm list packages",
+  "run": "运行",
+  "output": "输出",
+  "noOutputYet": "暂无输出。",
+  "emptyOutput": "（输出为空）",
+  "enterCommand": "请输入命令。",
+  "commandFailed": "错误：{error}"
+}

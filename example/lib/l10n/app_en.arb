@@ -1,0 +1,141 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Shizuku API Demo",
+  "@appTitle": {
+    "description": "Title shown in the app bar and as the app title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Label of the language picker on the demo page"
+  },
+  "followSystem": "Follow system",
+  "@followSystem": {
+    "description": "Language option that follows the device locale"
+  },
+
+  "status": "Status",
+  "@status": {
+    "description": "Heading of the service and permission status card"
+  },
+  "checkStatus": "Check status",
+  "@checkStatus": {
+    "description": "Tooltip of the refresh status button"
+  },
+  "shizukuService": "Shizuku service",
+  "@shizukuService": {
+    "description": "Label of the Shizuku service status row"
+  },
+  "permission": "Permission",
+  "@permission": {
+    "description": "Label of the permission status row and heading of the permission card"
+  },
+  "serviceRunning": "Running",
+  "@serviceRunning": {
+    "description": "Status badge shown when the Shizuku service is running"
+  },
+  "serviceNotRunning": "Not running",
+  "@serviceNotRunning": {
+    "description": "Status badge shown when the Shizuku service is not running"
+  },
+  "permissionGranted": "Granted",
+  "@permissionGranted": {
+    "description": "Status badge shown when permission is granted"
+  },
+  "permissionDenied": "Denied",
+  "@permissionDenied": {
+    "description": "Status badge shown when permission is denied"
+  },
+  "unknown": "Unknown",
+  "@unknown": {
+    "description": "Status badge shown before the status has been checked"
+  },
+
+  "startShizukuFirst": "Start Shizuku first, then request permission.",
+  "@startShizukuFirst": {
+    "description": "Hint shown while the Shizuku service is not running"
+  },
+  "canRunCommandsNow": "Permission granted. You can run commands now.",
+  "@canRunCommandsNow": {
+    "description": "Hint shown after permission has been granted"
+  },
+  "permissionNotGrantedYet": "Permission not granted yet.",
+  "@permissionNotGrantedYet": {
+    "description": "Hint shown while permission is missing"
+  },
+  "requestPermission": "Request permission",
+  "@requestPermission": {
+    "description": "Label of the permission request button"
+  },
+  "snackPermissionGranted": "Permission granted.",
+  "@snackPermissionGranted": {
+    "description": "SnackBar message shown after a successful permission request"
+  },
+  "snackPermissionDenied": "Permission denied.",
+  "@snackPermissionDenied": {
+    "description": "SnackBar message shown after a rejected permission request"
+  },
+  "checkStatusFailed": "Failed to check status: {error}",
+  "@checkStatusFailed": {
+    "description": "SnackBar message shown when checking the status throws",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Shizuku is not running"
+      }
+    }
+  },
+  "requestPermissionFailed": "Failed to request permission: {error}",
+  "@requestPermissionFailed": {
+    "description": "SnackBar message shown when the permission request throws",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission dialog unavailable"
+      }
+    }
+  },
+
+  "runCommand": "Run command",
+  "@runCommand": {
+    "description": "Heading of the command card"
+  },
+  "commandLabel": "Command",
+  "@commandLabel": {
+    "description": "Label of the command text field"
+  },
+  "commandHint": "e.g. wm size, pm list packages",
+  "@commandHint": {
+    "description": "Placeholder of the command text field"
+  },
+  "run": "Run",
+  "@run": {
+    "description": "Label of the button that runs the command"
+  },
+  "output": "Output",
+  "@output": {
+    "description": "Heading of the command output area"
+  },
+  "noOutputYet": "No output yet.",
+  "@noOutputYet": {
+    "description": "Placeholder shown before any command has run"
+  },
+  "emptyOutput": "(empty output)",
+  "@emptyOutput": {
+    "description": "Placeholder shown when a command returns an empty string"
+  },
+  "enterCommand": "Please enter a command.",
+  "@enterCommand": {
+    "description": "SnackBar message shown when the command field is empty"
+  },
+  "commandFailed": "Error: {error}",
+  "@commandFailed": {
+    "description": "Output shown in the output area when a command throws",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied"
+      }
+    }
+  }
+}

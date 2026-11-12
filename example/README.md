@@ -26,7 +26,18 @@ refresh icon (or "Check status") to query the live state, then:
 3. Tap a quick-command chip or type your own command and tap **Run**.
 
 The output area keeps the last command output in a monospace, scrollable, selectable view (tap and
-hold to copy). Commands starting with `Error` / `Unexpected error` are highlighted in red.
+hold to copy). Output from a failed command is highlighted in red.
+
+## Localization
+
+The demo ships English (`lib/l10n/app_en.arb`) and Simplified Chinese (`lib/l10n/app_zh.arb`)
+messages. It follows the device locale by default; the drop-down at the top of the page can override
+it with **English**, **简体中文**, or **Follow system**. The override lives in memory (it is not
+persisted), and unsupported device locales fall back to English.
+
+Generated Dart localizations live in `lib/l10n/app_localizations*.dart`. They are produced by
+`flutter gen-l10n` (also run automatically by `flutter pub get` / `flutter run`). To add a language,
+add `app_<locale>.arb` next to the existing ARB files and re-run `flutter gen-l10n`.
 
 ## Tests
 
